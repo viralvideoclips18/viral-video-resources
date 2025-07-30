@@ -1,0 +1,101 @@
+.video-container {
+  max-width: 700px;
+  margin: auto;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  text-align: center;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.main-image,
+.gif-image {
+  width: 100%;
+  border-radius: 12px;
+  border: 4px solid #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.video-title {
+  font-size: 26px;
+  color: #ff4d4d;
+  margin-bottom: 15px;
+}
+
+.video-description {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.watch-btn {
+  background: linear-gradient(45deg, #ff1a1a, #ff6600);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.download-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.download-btn {
+  width: 250px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff1a1a, #ff6600);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  transition: width 0.2s ease;
+}
+
+.download-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.circle-border-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+}
+
+.circle-border-glow rect {
+  transition: stroke-dashoffset 0.1s linear;
+}
